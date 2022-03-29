@@ -12,9 +12,41 @@
 }
 
 .back {
-    background-color: rgb(160, 159, 95);
+    /* background-color: rgb(160, 159, 95); */
     border-radius: 10px;
     /* opacity: ; */
     margin: 10%;
     padding: 5%;
+    border-radius: 40px;
+    background: linear-gradient(225deg, #258dc1, #2ca8e5);
+    box-shadow: -28px 28px 57px #2281af, 28px -28px 57px #30b9fd;
+    text-align: center;
+}
+
+.randomButton:hover {
+    border-radius: 20px;
+    color: rgb(104, 218, 66);
+    box-shadow: 0 5px 15px rgba(104, 218, 66, 0.268);
+}
+
+.randomButton {
+    background: whitesmoke;
+    border-radius: 10px;
+    width: 3em;
+    height: 3em;
+}
+
+.rotate:hover {
+    animation: rotation 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
 }
